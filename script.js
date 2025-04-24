@@ -235,12 +235,12 @@ function principal() {
     function crearFooter() {
         const footer = document.createElement("footer");
         footer.id = "footer";
-        
+        const horarios= document.getElementById("Horarios")
         const span = document.createElement("span");
         span.textContent = "© 2025 Proyecto desarrollado y promovido por Hoyts Nuevocentro";
         
         footer.appendChild(span);
-        document.body.appendChild(footer);
+        horarios.after(footer)
     }
     function horariosingreso() {
         function renderizarH() {
