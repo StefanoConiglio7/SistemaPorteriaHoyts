@@ -385,7 +385,7 @@ function principal() {
         }
         renderizarH()
     }
-    function horariosegreso() {
+    function Horariosegreso() {
         function renderizarH() {
             const income= document.getElementById("Egreso")
             const h2 = document.createElement("h2")
@@ -530,7 +530,7 @@ function principal() {
         renderizarH()
     }
     Horariosingreso()
-    horariosegreso()
+    Horariosegreso()
     CrearFooter();  
     SalasyPeliculas();
     CambiodePosters()
