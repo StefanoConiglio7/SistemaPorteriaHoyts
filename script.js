@@ -232,17 +232,16 @@ function principal() {
         }
         renderizarP();
     }
-    function crearFooter() {
+    function CrearFooter() {
         const footer = document.createElement("footer");
         footer.id = "footer";
         const horarios= document.getElementById("Horarios")
         const span = document.createElement("span");
         span.textContent = "© 2025 Proyecto desarrollado y promovido por Hoyts Nuevocentro";
-        
         footer.appendChild(span);
         horarios.after(footer)
     }
-    function horariosingreso() {
+    function Horariosingreso() {
         function renderizarH() {
             const income= document.getElementById("Ingreso")
             const h2 = document.createElement("h2")
@@ -530,9 +529,9 @@ function principal() {
         }
         renderizarH()
     }
-    horariosingreso()
+    Horariosingreso()
     horariosegreso()
-    crearFooter();  
+    CrearFooter();  
     SalasyPeliculas();
     CambiodePosters()
 }
