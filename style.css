@@ -11,7 +11,9 @@
         bottom: 0;
         width: 100%;
     }
-    
+    .oculto{
+        display: none;
+    }
     .nav {
         display: flex;
         align-items: center;
@@ -120,6 +122,19 @@
         font-size: 16px;
         padding: 10px; 
         transition: border-color 0.3s ease-in-out;
+        animation-name: efecto;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1.5s;
+    }
+    @keyframes efecto{
+        0%{
+            opacity: 0;
+            transform: translate(-100%, 0);
+        }
+        100%{
+            opacity: 1;
+        }
     }
     .cambiodeposters{
         background-color: #FF4500;

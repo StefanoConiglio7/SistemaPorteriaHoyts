@@ -43,19 +43,25 @@ function principal() {
         function renderizarH() {
             const income= document.getElementById("Egreso")
             const div2= document.createElement("div")
-            div2.className= "div2"
             const button= document.createElement("button")
             const div= document.createElement("div")
             div.className= "buttons"
             button.innerText="Agregar Funcion"
             button.className= "agregar"
+            const rooms = document.querySelectorAll(".roomanddate2")
             income.appendChild(div2)
             income.appendChild(button)
             income.appendChild(div)
-            button.addEventListener("click",()=> crearhorarioE(income,button))
+            button.addEventListener("click",()=> {
+                div2.className = "div2"
+                crearhorarioE(income,button)
+            })
             renderdiv(div2)
             agregar(div)
             listarhorarioE(income,button)
+            setTimeout(() => {
+                div2.className = document.querySelectorAll(".roomanddate2").length ? "div2" : "oculto";
+            }, 100);
         }
         function agregar(div) {
             const inputsT= document.createElement("button")
@@ -476,6 +482,12 @@ function principal() {
             const filtrado= storedData.filter(data =>data.id !== id)
             localStorage.setItem("egreso", JSON.stringify(filtrado))
             listarhorarioE(income,button)
+            setTimeout(() => {
+            const div2 = document.querySelector(".div2");
+                if (document.querySelectorAll(".roomanddate2").length === 0) {
+                    div2.className = "oculto";
+                }
+            }, 5);
         }
         function CambiarContenidoN(id, inputnumber) {
             const data = egreso();
