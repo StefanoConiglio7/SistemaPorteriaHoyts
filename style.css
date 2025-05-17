@@ -22,245 +22,10 @@
     .nav img {
         background-color: #000000;
     }
-    #SalasyPeliculas {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas: 
-          "divinputs divinputs divinputs";
-        gap: 10px;
-    } 
-    .divinputs {
-        grid-area: divinputs;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        padding: 20px;
-        width: 100%;
-        border-radius: 8px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .divinputs h1 {
-        color: #FFD700;
-        font-size: 2rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center;
-    }
-    .divinputs input {
-        width: 80%;
-        padding: 12px;
-        border: 2px solid #FFD700;
-        border-radius: 6px;
-        font-size: 1rem;
-        background-color: white;
-        text-align: center;
-        color: #000000;
-    }
-    .divinputs textarea {
-        width: 80%;
-        padding: 12px;
-        border: 2px solid #FFD700;
-        border-radius: 6px;
-        font-size: 1rem;
-        background-color: white;
-        resize: vertical;
-        color: #000000;
-        min-height: 120px;
-        max-height: 250px;
-        height: 150px;
-    }
-    .divinputs button {
-        background-color: #000000;
-        color: white;
-        font-size: 1rem;
-        font-weight: bold;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: background 0.3s ease-in-out;
-    }
-    .divinputs button:hover {
-        background-color: #FFD700;
-        color: #000000;
-    }
-    .roomandmovies {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 12px;
-        padding: 15px;
-        background-color: #000000;
-        border: 2px solid #D4001A;
-        border-radius: 8px;
-        box-shadow: 0px 4px 8px rgba(212, 0, 26, 0.4);
-        position: relative;
-        transition: transform 0.3s ease-in-out;
-    }
-    .roomandmovies:hover{
-        transform: scale(1.02);
-    }
-    .roomandmovies h2 {
-        color: #FFD700;
-        font-size: 1.6rem;
-        font-weight: bold;
-        text-align: center;
-    }
-    .roomandmovies textarea {
-        width: 90%;
-        height: 120px;
-        padding: 10px;
-        border: 2px solid #D4001A;
-        border-radius: 6px;
-        font-size: 1rem;
-        background-color: white;
-        color: #000000;
-        resize: vertical;
-    }
-    .roomandmovies button {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background-color: #D4001A;
-        color: white;
-        font-size: 1rem;
-        font-weight: bold;
-        padding: 8px 12px;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: background 0.3s ease-in-out;
-    }
-    .roomandmovies button:hover {
-        background-color: #FFD700;
-        color: white;
-    }
-    #CambiodePosters{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas: 
-          "divinputsC divinputsC divinputsC";
-        gap: 10px;
-    }
-    .divinputsC {
-        grid-area: divinputsC;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        padding: 20px;
-        width: 100%;
-        border-radius: 8px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .divinputsC h1 {
-        color: #FFD700;
-        font-size: 2rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center;
-    }
-    .divinputsC input {
-        width: 80%;
-        padding: 12px;
-        border: 2px solid #FFD700;
-        border-radius: 6px;
-        font-size: 1rem;
-        background-color: white;
-        text-align: center;
-        color: #000000;
-    }
-    .divinputsC textarea {
-        width: 80%;
-        padding: 12px;
-        border: 2px solid #FFD700;
-        border-radius: 6px;
-        font-size: 1rem;
-        background-color: white;
-        resize: vertical;
-        color: #000000;
-        min-height: 120px;
-        max-height: 250px;
-        height: 150px;
-    }
-    .divinputsC button {
-        background-color: #000000;
-        color: white;
-        font-size: 1rem;
-        font-weight: bold;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: background 0.3s ease-in-out;
-    }
-    .divinputsC button:hover {
-        background-color: #FFD700;
-        color: #000000;
-    }
-    .roomandposters {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 12px;
-        padding: 15px;
-        background-color: #000000;
-        border: 2px solid #D4001A;
-        border-radius: 8px;
-        box-shadow: 0px 4px 8px #D4001A;
-        position: relative;
-        transition: transform 0.3s ease-in-out;
-    }
-    .roomandposters:hover{
-        transform: scale(1.02);
-    }
-    .roomandposters h2 {
-        color: #FFD700;
-        font-size: 1.6rem;
-        font-weight: bold;
-        text-align: center;
-    }
-    .roomandposters textarea {
-        width: 90%;
-        height: 120px;
-        padding: 10px;
-        border: 2px solid #D4001A;
-        border-radius: 6px;
-        font-size: 1rem;
-        background-color: white;
-        color: #000000;
-        resize: vertical;
-    }
-    .roomandposters button {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background-color: #D4001A;
-        color: white;
-        font-size: 1rem;
-        font-weight: bold;
-        padding: 8px 12px;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: background 0.3s ease-in-out;
-    }
-    .roomandposters button:hover {
-        background-color: #FFD700;
-        color: white;
-    }
+    
     section#Horarios {
-        display: grid;
-        grid-template-areas:
-            "header header"
-            "left right";
+        display:flex;
+        flex-direction: column;
         gap: 20px;
         justify-content: center;
         align-items: center; 
@@ -273,13 +38,11 @@
         font-weight: bold; 
         justify-self: center;
     }
-    div#Ingreso,
     div#Egreso {
         align-self: center; 
         justify-self: center; 
     }
-    #Egreso,
-    #Ingreso {
+    #Egreso{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -291,12 +54,49 @@
         border: 2px solid #D4001A; 
         box-shadow: 0 4px 10px #D4001A;
     }
-    #Egreso h2,
-    #Ingreso h2 {
-        margin-bottom: 10px;
+    .div2{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: 100%;
+        height: 50px;
     }
-    #Egreso button,
-    #Ingreso button {
+    .salas{
+        position: absolute;
+        top: 0;
+        left: 180px;
+    }
+    .peliculas{
+        position: absolute;
+        top: 0;
+        left: 300px;
+    }
+    .idiomas{
+        position: absolute;
+        top: 0;
+        left: 445px;
+    }
+    .formatos{
+        position: absolute;
+        top: 0;
+        left: 570px;
+    }
+    .clasificaciones{
+        position: absolute;
+        top: 0;
+        left: 725px;
+    }
+    .inicio{
+        position: absolute;
+        top: 0;
+        left: 855px;
+    }
+    .fin{
+        position: absolute;
+        top: 0;
+        left: 1000px;
+    }
+    .agregar{
         background-color: #FFD700;
         color: black;
         border: none;
@@ -305,14 +105,12 @@
         cursor: pointer;
         transition: transform 0.3s ease-in-out;
     }
-    #Egreso button:hover,
-    #Ingreso button:hover {
+    .agregar:hover{
         transform: scale(1.05);
         background-color: #D4001A;
         color: white;
     }
-    .roomanddate2,
-    .roomanddate {
+    .roomanddate2{
         display: flex;
         flex-direction: row;
         align-items: center; 
@@ -323,10 +121,50 @@
         padding: 10px; 
         transition: border-color 0.3s ease-in-out;
     }
-    .roomanddate2 input,
-    .roomanddate input {
+    .cambiodeposters{
+        background-color: #FF4500;
+        color: black;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+    }
+    .cambiodeposters:hover{
+        transform: scale(1.05);
+        background-color: #D4001A;
+        color: white;
+    }
+    .all{
         flex: 1; 
         padding: 5px;
+        width: 115px;
+        border: 2px solid #0000CD; 
+        background-color:#0000CD;
+        border-radius: 6px;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+    .number2,
+    .time2,
+    .select2,
+    .text2{
+        flex: 1; 
+        padding: 5px;
+        width: 115px;
+        border: 2px solid black; ;
+        background-color:black;
+        border-radius: 6px;
+        font-size: 16px;
+        color: #000000;
+    }
+    .number,
+    .time,
+    .text,
+    .select { 
+        flex: 1;
+        padding: 5px;
+        width: 115px;
         border: 2px solid #FFD700 ;
         background-color: #FFFFFF;
         border-radius: 6px;
@@ -334,18 +172,21 @@
         transition: border-color 0.3s ease-in-out;
         color: #000000;
     }
-    .roomanddate2 input:focus,
-    .roomanddate input:focus {
+    .number:focus,
+    .text:focus,
+    .time:focus,
+    .select:focus{
         border-color: #D4001A;
         outline: none;
     }
-    .roomanddate2 input[type="checkbox"],
-    .roomanddate input[type="checkbox"] {
+    .checkbox{
         width: 20px; 
         height: 20px;
     }
-    .roomanddate2 button,
-    .roomanddate button {
+    .checkbox:hover{
+        cursor: pointer;
+    }
+    .eliminar{
         background-color: #FFD700;
         color: black;
         border: none;
@@ -354,13 +195,12 @@
         cursor: pointer;
         transition: 0.3s ease-in-out;
     }
-    .roomanddate2 button:hover,
-    .roomanddate button:hover {
+    .eliminar:hover{
+        transform: scale(1.05);
         background-color: #D4001A;
         color: white;
     }
-    #Egreso .buttons,
-    #Ingreso .buttons {
+    .buttons{
         display: flex;
         flex-direction: row;
         gap: 10px; 
@@ -368,8 +208,7 @@
         align-items: center; 
         padding: 10px; /
     }
-    #Egreso .buttons button,
-    #Ingreso .buttons button {
+    .buttons button{
         background-color: #D4001A; 
         color: black;
         border: 2px solid #D4001A;
@@ -378,290 +217,8 @@
         cursor: pointer;
         transition: 0.3s ease-in-out;
     }
-    #Egreso .buttons button:hover,
-    #Ingreso .buttons button:hover {
+    .buttons button:hover{
         background-color: #D4001A;
         color: white;
     } 
 
-@media (min-width: 769px) and (max-width: 1023px) {
-    #footer {
-        font-size: 20px;
-        padding: 8px;
-    }
-
-    .nav {
-        padding: 8px 16px;
-    }
-
-    .nav img {
-        width: 200px;
-        height: 60px;
-    }
-
-    #SalasyPeliculas {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-            "divinputs divinputs";
-        gap: 8px;
-    }
-
-    .divinputs {
-        padding: 15px;
-        gap: 10px;
-    }
-
-    .divinputs h1 {
-        font-size: 1.8rem;
-    }
-
-    .divinputs input,
-    .divinputs textarea {
-        font-size: 0.9rem;
-        width: 85%;
-    }
-
-    .divinputs button {
-        padding: 10px 18px;
-        font-size: 0.9rem;
-    }
-
-    .roomandmovies,
-    .roomandposters {
-        padding: 12px;
-        gap: 10px;
-    }
-
-    .roomandmovies h2,
-    .roomandposters h2 {
-        font-size: 1.4rem;
-    }
-
-    .roomandmovies textarea,
-    .roomandposters textarea {
-        height: 100px;
-    }
-
-    .roomandmovies button,
-    .roomandposters button {
-        padding: 6px 10px;
-        font-size: 0.9rem;
-    }
-
-    #CambiodePosters {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-            "divinputsC divinputsC";
-        gap: 8px;
-    }
-
-    .divinputsC {
-        padding: 15px;
-        gap: 10px;
-    }
-
-    .divinputsC h1 {
-        font-size: 1.8rem;
-    }
-
-    .divinputsC input,
-    .divinputsC textarea {
-        font-size: 0.9rem;
-        width: 85%;
-    }
-
-    .divinputsC button {
-        padding: 10px 18px;
-        font-size: 0.9rem;
-    }
-
-    section#Horarios {
-        grid-template-areas:
-            "header"
-            "left"
-            "right";
-        gap: 15px;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    div#Ingreso,
-    div#Egreso {
-        width: 80%;
-        max-width: 400px;
-        padding: 15px;
-    }
-
-    .roomanddate2,
-    .roomanddate {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .roomanddate2 input,
-    .roomanddate input {
-        font-size: 0.9rem;
-    }
-
-    .buttons {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    #Egreso button,
-    #Ingreso button {
-        padding: 8px 14px;
-        font-size: 0.9rem;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        padding: 15px;
-    }
-
-    .nav img {
-        width: 170px;
-        height: 50px;
-    }
-
-    #SalasyPeliculas {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .divinputs {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .divinputs h1 {
-        font-size: 1.5rem;
-    }
-
-    .divinputs input,
-    .divinputs textarea {
-        width: 100%;
-        font-size: 0.9rem;
-        padding: 10px;
-    }
-
-    .divinputs button {
-        width: 100%;
-    }
-
-    .roomandmovies {
-        width: 95%;
-        padding: 12px;
-    }
-
-    .roomandmovies h2 {
-        font-size: 1.3rem;
-    }
-
-    .roomandmovies textarea {
-        width: 100%;
-        height: 100px;
-    }
-
-    .roomandmovies button {
-        top: 5px;
-        right: 5px;
-        padding: 6px 10px;
-    }
-    #CambiodePosters {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .divinputsC {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .divinputsC h1 {
-        font-size: 1.5rem;
-    }
-
-    .divinputsC input,
-    .divinputsC textarea {
-        width: 100%;
-        font-size: 0.9rem;
-        padding: 10px;
-    }
-
-    .divinputsC button {
-        width: 100%;
-    }
-
-    .roomandposters {
-        width: 95%;
-        padding: 12px;
-    }
-
-    .roomandposters h2 {
-        font-size: 1.3rem;
-    }
-
-    .roomandposters textarea {
-        width: 100%;
-        height: 100px;
-    }
-
-    .roomandposters button {
-        top: 5px;
-        right: 5px;
-        padding: 6px 10px;
-    }
-    section#Horarios {
-        grid-template-areas:
-            "header"
-            "left"
-            "right";
-        gap: 15px;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    div#Ingreso,
-    div#Egreso {
-        align-self: center;
-        justify-self: center;
-        width: 90%;
-        max-width: 350px;
-        padding: 15px;
-    }
-
-    .roomanddate2,
-    .roomanddate {
-        flex-direction: column;
-        gap: 8px;
-        padding: 8px;
-    }
-
-    .roomanddate2 input,
-    .roomanddate input {
-        font-size: 14px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    #Egreso button,
-    #Ingreso button {
-        padding: 6px 12px;
-        font-size: 14px;
-    }
-}
