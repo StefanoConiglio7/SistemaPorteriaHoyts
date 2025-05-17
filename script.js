@@ -69,7 +69,15 @@ function principal() {
             const checks= document.createElement("button")
             checks.innerText="Limpiar Checks"
             checks.addEventListener("click",()=> ReiniciarC())
-            inputsT.addEventListener("click",()=>ReiniciarTodo())
+            inputsT.addEventListener("click",()=>{
+                const paswordDB= "servicios"
+                const password= prompt("Ingrese la contraseña para validar")
+                if (password === paswordDB) {
+                    ReiniciarTodo()
+                } else {
+                    alert("Contraseña incorrecta")
+                }
+            })
                 
             div.appendChild(inputsT)
             div.appendChild(checks)
