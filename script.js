@@ -349,16 +349,18 @@ function principal() {
                     const id= room.getAttribute("data-id")
                     CambiarContenidoT2(id,inputtime2)
                 })
-                const checkboxes = document.querySelectorAll(".checkbox");
-                checkboxes.forEach((checkbox) => {
-                    const room = checkbox.closest(".roomanddate2");
+                document.querySelectorAll(".roomanddate2").forEach((room) => {
+                    const checkbox = room.querySelector(".checkbox");
                     const cambiodeposters = room.querySelector(".cambiodeposters");
 
-                    checkbox.addEventListener("change", () => {
+                    if (checkbox && cambiodeposters) {
                         cambiodeposters.disabled = checkbox.checked;
-                    });
-                    cambiodeposters.disabled = checkbox.checked;
+                        checkbox.addEventListener("change", () => {
+                            cambiodeposters.disabled = checkbox.checked;
+                        });
+                    }
                 });
+
 
                 checkbox.addEventListener("change", () => {
                     const isTachado = checkbox.checked;
