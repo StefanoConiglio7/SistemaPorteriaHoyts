@@ -349,6 +349,17 @@ function principal() {
                     const id= room.getAttribute("data-id")
                     CambiarContenidoT2(id,inputtime2)
                 })
+                const checkboxes = document.querySelectorAll(".checkbox");
+                checkboxes.forEach((checkbox) => {
+                    const room = checkbox.closest(".roomanddate2");
+                    const cambiodeposters = room.querySelector(".cambiodeposters");
+
+                    checkbox.addEventListener("change", () => {
+                        cambiodeposters.disabled = checkbox.checked;
+                    });
+                    cambiodeposters.disabled = checkbox.checked;
+                });
+
                 checkbox.addEventListener("change", () => {
                     const isTachado = checkbox.checked;
                     const id = room.getAttribute("data-id");
